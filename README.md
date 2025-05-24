@@ -4,7 +4,7 @@ In a magic world of numbers you are given a directed acyclic graph (DAG) with \(
 - **Addition Operation (`+ a`)** : Add a to the current score.
 - **Multiplication Operation (`× b`)**: Multiply b to the current score.
 
-You have the ability to chose any node once and travel along any directed path. Once you reach a dead end \(i.e. you reached a node with no outgoing path\) you Stop . You want to maximize the score. Outpur the maximum possible score you can get. 
+You have the ability to choose any node once and travel along any directed path. Once you reach a dead end \(i.e. you reached a node with no outgoing path\) you Stop . You want to maximize the score. Outpur the maximum possible score you can get. 
 ## Input
 
 - The first line contains an integer t \(1 ≤ t ≤ 10000\) — the number of test cases.
@@ -26,12 +26,12 @@ For each test case, output a single integer — the maximum score computed among
 4 1   
 4 5   
 6 5   
-+ 984 * 3
-+ 860 + 608
-* 2   + 65
-+ 943 * 3
-* 2   * 2
-+ 231 + 684
+ +984 *3
+ +860 +608
+ *2   +65
+ +943 *3
+ *2   *2
+ +231 +684
 ### OUTPUT
 16848
 
