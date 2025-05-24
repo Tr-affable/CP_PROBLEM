@@ -52,12 +52,6 @@ void solve() {
         toposort(st,adj,i);
     }
     vector<ll> ans(n+1,0);
-    for(int i=1;i<=n;i++){
-        if(rev[i].size()==0){
-            adj[0].push_back(i);
-            rev[i].push_back(0);
-        }
-    }
     // st.push(0);
     while(!st.empty()){
         ll idx=st.top();
@@ -86,7 +80,6 @@ void solve() {
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    // Your generator code here
     ll t=1;
     cin>>t;
     while(t--){
