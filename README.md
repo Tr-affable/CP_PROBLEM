@@ -26,18 +26,18 @@ For each test case, output a single integer — the maximum score computed among
 4 1   
 4 5   
 6 5   
- +984 *3
- +860 +608
- *2   +65
- +943 *3
- *2   *2
+ +984 *3     
+ +860 +608     
+ *2   +65     
+ +943 *3     
+ *2   *2     
  +231 +684
 ### OUTPUT
 16848
 
 ## Explanation
-If you start from the node 2. and then follow the path like
+If you start from the node 2. and then follow the path like     
 
-**2 → 4 → 1 → 6 → 5**
-You will have a total score of  16848.
-It can be shown that this is the maximum value.
+**2 → 4 → 1 → 6 → 5**     
+You will have a total score of  16848.     
+It can be shown that this is the maximum value.     
