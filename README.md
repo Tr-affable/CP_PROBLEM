@@ -14,7 +14,7 @@ You have the ability to chose any node once and travel along any directed path. 
   - The next n lines each describe 2 operation of the form  (`+ a`) \(0 ≤ **a** ≤ 1000\) or (`× b`) \(2 ≤ **b** ≤ 3\). You can chose any one of the two operations. 
 ## Output
 
-For each test case, output a single integer — the maximum score computed among all nodes.
+For each test case, output a single integer — the maximum score computed among all nodes .
 ### SAMPLE INPUT
 1
 6 8
