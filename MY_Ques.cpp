@@ -58,31 +58,27 @@ void solve() {
             rev[i].push_back(0);
         }
     }
-    st.push(0);
+    // st.push(0);
     while(!st.empty()){
         ll idx=st.top();
         st.pop();
-        for(auto k:adj[idx]){
-            ll y=0;
-            for(auto l:rev[k]){
-                if(v[k-1][0]==1){
-                    y=max(y,ans[l]+v[k-1][1]);
-                }
-                else{
-                    y=max(y,ans[l]*v[k-1][1]);
-                }
-                if(v[k-1][2]==1){
-                    y=max(y,ans[l]+v[k-1][3]);
-                }
-                else{
-                    y=max(y,ans[l]*v[k-1][3]);
-                }
-                ans[k]=max(ans[k],y);
+        ll k=idx;
+        ll y=0;
+        for(auto l:rev[idx]){
+            y=max(y,ans[l]);
+        }
+        for(int i=0;i<3;i++){
+            if(v[idx-1][i]==1){
+                ans[idx]=max(ans[idx],y+v[idx-1][i+1]);
             }
+            if(v[idx-1][i]==2){
+                ans[idx]=max(ans[idx],y*v[idx-1][i+1]);
+            }
+            i++;
         }
     }
     ll maxx=0;
-    for(int i=1;i<=n;i++){\
+    for(int i=1;i<=n;i++){
         maxx=max(maxx,ans[i]);
     }
     cout<<maxx<<"\n";
