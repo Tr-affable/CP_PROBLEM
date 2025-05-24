@@ -2,7 +2,7 @@
 \usepackage{graphicx} % Required for inserting images
 \usepackage{amsmath}  % For better math support
 
-\title{Editorial}
+\title{Editorial} 
 \author{Tushar Bagani}
 \date{May 2025}
 
@@ -12,7 +12,7 @@
 
 \section{Key Observations}
 
-Since each operation is either multiplication or addition, the more nodes we traverse in a path, the more our score can increase.
+Since each operation is either multiplication or addition, the more nodes we traverse in a path, the more our score can Increase.
 
 If we choose a node \( x \) with an incoming edge from \( y \), we can potentially obtain a higher score by choosing node \( y \) first. Therefore, we should start from nodes with no incoming edges. Let us call these nodes \textbf{Good} nodes.
 

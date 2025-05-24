@@ -14,7 +14,7 @@ int rand_val(char op) {
 }
 int main(int argc, char* argv[]) {
     registerGen(argc, argv, 1);
-    int T = rnd.wnext(95, 10000, 7); 
+    int T = rnd.wnext(95, 1000, 7); 
     cout << T << "\n";
     while (T--) {
         int n = rnd.wnext(3, 29, 7);
