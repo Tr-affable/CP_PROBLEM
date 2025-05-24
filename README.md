@@ -16,16 +16,16 @@ You have the ability to chose any node once and travel along any directed path. 
 
 For each test case, output a single integer — the maximum score computed among all nodes .
 ### SAMPLE INPUT
-1
-6 8
-1 6
-2 1
-2 3
-2 4
-3 6
-4 1
-4 5
-6 5
+1    
+6 8   
+1 6   
+2 1   
+2 3   
+2 4   
+3 6   
+4 1   
+4 5   
+6 5   
 + 984 * 3
 + 860 + 608
 * 2   + 65
