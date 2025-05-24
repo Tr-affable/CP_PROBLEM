@@ -66,7 +66,6 @@ void solve() {
 
     ll maxx = 0;
     for (int i = 1; i <= n; i++) {
-        // cout << ans[i] << " ";
         maxx = max(maxx, ans[i]);
     }
     cout << maxx << "\n";
