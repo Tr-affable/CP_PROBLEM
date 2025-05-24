@@ -4,7 +4,6 @@ using namespace std;
 typedef long long int ll;
 ll mod=1e9+7;
 ll check=0;
-// stack<ll> st;
 vector<ll> visited(1,0);
 void toposort(stack<ll>& st,vector<vector<ll>>& adj,ll n){
     visited[n]=1;
@@ -13,13 +12,6 @@ void toposort(stack<ll>& st,vector<vector<ll>>& adj,ll n){
         toposort(st,adj,k);
     }
     st.push(n);
-}
-void ps(stack<ll> s){
-    while(!s.empty()){
-        cout<<s.top()<<" ";
-        s.pop();
-    }
-    cout<<" gg\n";
 }
 void solve() {
     ll n,m;
@@ -59,7 +51,6 @@ void solve() {
         if(visited[i]==1){continue;}
         toposort(st,adj,i);
     }
-    // ps(st);
     vector<ll> ans(n+1,0);
     for(int i=1;i<=n;i++){
         if(rev[i].size()==0){
@@ -91,8 +82,7 @@ void solve() {
         }
     }
     ll maxx=0;
-    for(int i=1;i<=n;i++){
-        // cout<<ans[i]<<" ";
+    for(int i=1;i<=n;i++){\
         maxx=max(maxx,ans[i]);
     }
     cout<<maxx<<"\n";
@@ -100,18 +90,10 @@ void solve() {
 int main(){
     ios_base::sync_with_stdio(false);
     cin.tie(nullptr);
-    freopen("testcases.txt", "r", stdin);
-    freopen("output.txt", "w", stdout);
-
     // Your generator code here
-    
     ll t=1;
     cin>>t;
-    auto start = std::chrono::high_resolution_clock::now();
     while(t--){
         solve();
     }
-    auto end = std::chrono::high_resolution_clock::now();
-    std::chrono::duration<double> diff = end - start;
-    std::cerr << "Time taken: " << diff.count() << " seconds\n";
 }
